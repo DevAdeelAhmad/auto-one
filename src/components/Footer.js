@@ -6,17 +6,17 @@ const Footer = () => {
   const commonText = "text-xs md:text-base";
 
   return (
-    <div className="flex flex-col w-full h-full justify-between items-center bg-[#F7EFEA]">
-      <div className="flex flex-col lg:flex-row w-[80%] h-full justify-around gap-y-5 mt-5">
+    <div className="flex flex-col w-full h-full justify-between items-center bg-secondary">
+      <div className="flex flex-col lg:flex-row w-[90%] h-full justify-around gap-y-5 py-5">
         <div className="flex flex-col w-full lg:w-[55%] gap-y-4 ">
-          <img src="/assets/logo.png" alt="logo" width="70px" height="60px" />
+          <img src="/assets/logo.png" alt="logo" width="90px" height="80px" />
           <span>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s,
           </span>
         </div>
-        <div className="flex flex-wrap justify-between py-5">
+        <div className="flex flex-wrap justify-between h-full gap-x-5">
           <div className="flex flex-col h-fit gap-y-4">
             <SubTitle title="Our Company" />
             <a href="#" className={`${commonText}`}>
@@ -59,7 +59,7 @@ const Footer = () => {
       </div>
       <div className="flex flex-col justify-center items-center w-full h-full gap-y-5">
         <hr className="border-[1px] w-[100%]" />
-        <div className="flex flex-col-reverse lg:flex-row justify-between w-[80%] items-center gap-y-4">
+        <div className="flex flex-col-reverse lg:flex-row justify-between py-4 w-[80%] items-center gap-y-4">
           <span className="text-center">© 2023 All Copyright Reserved</span>
           <FindUs />
         </div>
