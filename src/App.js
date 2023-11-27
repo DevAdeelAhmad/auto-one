@@ -7,6 +7,7 @@ import Aim from './components/sub/Aim';
 import Banner1 from './components/Banner1';
 import Banner2 from './components/Banner2';
 import VisitorsOffer from './components/VisitorsOffer';
+import SellerOffer from './components/SellerOffer';
 import Footer from './components/Footer';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Explore />
       <Solutions />
       <VisitorsOffer />
+      <SellerOffer />
       <Aim />
       <Value />
       <Banner2 />

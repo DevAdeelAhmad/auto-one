@@ -1,8 +1,9 @@
 import React from 'react'
+import SellerContent from './sub/SellerContent'
 
 const SellerOffer = () => {
   return (
-    <div>SellerOffer</div>
+    <SellerContent />
   )
 }
 

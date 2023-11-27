@@ -6,13 +6,12 @@ import {
 import { VisitorData } from "../../Data/Data.ts";
 import "./style.min.css";
 import { FaCircle } from "react-icons/fa6";
-import Title from '../sub/Title'
+import Title from "./Title.js";
 
-
-const OfferContent = () => {
+const SellerContent = () => {
   return (
-    <section className="w-full flex flex-col gap-y-10 py-10 items-center justify-center heroBg bg-secondary">
-      <Title title='What We Offer You As A Visitor:' />
+    <section className="w-full flex flex-col gap-y-10 py-10 items-center justify-center">
+      <Title title="What We Offer You As A Seller:" />
       <VerticalTimeline lineColor="#F07836" className="">
         {VisitorData.map((data, index) => (
           <VerticalTimelineElement
@@ -45,4 +44,4 @@ const OfferContent = () => {
   );
 };
 
-export default OfferContent;
+export default SellerContent;
