@@ -11,7 +11,7 @@ import Title from '../sub/Title'
 
 const OfferContent = () => {
   return (
-    <section className="w-full flex flex-col gap-y-10 py-10 items-center justify-center heroBg bg-secondary">
+    <section className="w-full flex flex-col gap-y-10 py-10 items-center justify-center heroBg bg-secondary text-center">
       <Title title='What We Offer You As A Visitor:' />
       <VerticalTimeline lineColor="#F07836" className="">
         {VisitorData.map((data, index) => (
