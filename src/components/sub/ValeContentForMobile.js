@@ -1,8 +1,6 @@
 import React from "react";
 import { ValueData } from "../../Data/Data.ts";
 import SubTitle from "./SubTitle.js";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
 
 import Marquee from "react-fast-marquee";
 
