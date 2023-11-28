@@ -4,21 +4,22 @@ import SubTitle from "./SubTitle.js";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
+import Marquee from "react-fast-marquee";
+
 const ValeContentForMobile = () => {
   return (
-    <Swiper spaceBetween={50} slidesPerView={1.5} className="w-full !h-[40vh] flex items-center justify-center">
+    <Marquee pauseOnHover={true} className="py-5">
       {ValueData.map((data) => (
-        <SwiperSlide
+        <div
           key={data.key}
+          className="flex flex-col items-center w-64 justify-center rounded-2xl !h-[250px] hover:bg-primary/80 hover:text-white shadow-[0px_2px_16px_0px_#cbd5e0] py-10 px-6 gap-y-5 mx-5"
         >
-          <div className="flex flex-col items-center justify-center rounded-lg !h-[250px] hover:bg-primary/80 hover:text-white shadow-lg py-10 px-6 gap-y-5">
-            <img src={data.image} alt="logo" />
-            <SubTitle title={data.title} />
-            <span className="text-center text-tertiary">{data.description}</span>
-          </div>
-        </SwiperSlide>
+          <img src={data.image} alt="logo" />
+          <SubTitle title={data.title} />
+          <span className="text-center text-tertiary">{data.description}</span>
+        </div>
       ))}
-    </Swiper>
+    </Marquee>
   );
 };
 

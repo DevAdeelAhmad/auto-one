@@ -3,11 +3,10 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { VisitorData } from "../../Data/Data.ts";
 import "./style.min.css";
 import { FaCircle } from "react-icons/fa6";
 import Title from '../sub/Title'
-
+import { VisitorData } from '../../Data/Data.ts'
 
 const OfferContent = () => {
   return (
@@ -21,9 +20,7 @@ const OfferContent = () => {
             contentStyle={{
               background: "transparent",
               color: "#000",
-              border: "2px solid black",
-              borderRadius: "8px",
-              padding: "20px",
+              position: "relative",
               boxShadow: "none",
             }}
             contentArrowStyle={{
@@ -37,7 +34,30 @@ const OfferContent = () => {
               marginLeft: "-0.3rem",
             }}
           >
-            <p>{data}</p>
+            <div
+              className="p-2 rounded-lg border-[2px] border-black"
+              style={{
+                position: "relative",
+                zIndex: 2,
+              }}
+            >
+              <p className="rounded-lg py-5 px-3">{data}</p>
+            </div>
+            <div
+              className="half-border"
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 100,
+                width: "40%",
+                height: "100%",
+                border: "4px solid #F07836",
+                borderRadius: "8px",
+                borderLeftColor: 'transparent',
+                zIndex: 1,
+                boxSizing: "border-box",
+              }}
+            ></div>
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>

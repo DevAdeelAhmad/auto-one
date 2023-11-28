@@ -13,3 +13,22 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 } */
 
+.half-border-container {
+  position: relative;
+  width: 300px; /* Adjust the width as needed */
+  margin: 20px;
+}
+
+.half-border-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  border-bottom: 2px solid #000;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  border-radius: 10px 0px 0px 10px; /* Adjust the border color and style as needed */
+  box-sizing: border-box;
+}

@@ -110,3 +110,15 @@ export const VisitorData = [
   "High and stable performance",
   " Continuous additions that meet the purpose and needs of the visitor",
 ];
+
+export const SellerData = [
+  "An integrated platform with multiple tools that meet the seller's purposes.",
+  "An integrated notification system.",
+  "Statistics that give different insights.",
+  " Easiness of communication with the public.",
+  "An integrated profile to manage the uploaded materials.",
+  "Adopting the concept of SEO and ASO to create future beneficial opportunities and smart access for all interested parties.",
+  " A special algorithm that facilitates the arrival of uploaded materials according to what the visitor is looking for.",
+  "24 hours Customer Support service",
+  "Continuous additions that match user expectations.",
+];

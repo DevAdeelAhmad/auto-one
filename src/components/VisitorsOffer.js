@@ -3,7 +3,7 @@ import OfferContent from './sub/OfferContent'
 
 const VisitorsOffer = () => {
   return (
-    <OfferContent/>
+    <OfferContent />
   )
 }
 

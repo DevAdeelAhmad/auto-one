@@ -17,8 +17,8 @@ function App() {
       <Hero />
       <Explore />
       <Solutions />
-      <VisitorsOffer />
-      <SellerOffer />
+      {/* <VisitorsOffer />
+      <SellerOffer /> */}
       <Aim />
       <Value />
       <Banner2 />
