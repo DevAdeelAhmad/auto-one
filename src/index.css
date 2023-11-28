@@ -32,3 +32,74 @@
   border-radius: 10px 0px 0px 10px; /* Adjust the border color and style as needed */
   box-sizing: border-box;
 }
+
+
+@layer components {
+  .timeline {
+    line-height: 1.5em;
+    font-size: 14px;
+    transition: all .4s ease;
+    position: relative;
+    counter-reset: section;
+  }
+
+  .timeline:before {
+    content: "";
+    width: 10px;
+    height: 100%;
+    background: 'blue'; /* Replace with your color */
+    position: absolute;
+    top: 0;
+    left: -3.313em;
+    border-radius: 40px 40px;
+  }
+
+  .timeline--entry {
+    position: relative;
+    background-color: 'blue'; /* Replace with your color */
+  }
+
+  .timeline--entry__title {
+    color: white;
+    background-color: 'blue'; /* Replace with your color */
+    font-weight: 'light'; /* Replace with your font weight */
+    font-size: 1rem;
+    padding: 1em;
+  }
+
+  .timeline--entry__title:before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    left: -1em;
+    border-right: 10px solid 'black'; /* Replace with your color */
+  }
+
+  .timeline--entry__detail {
+    background-color:'blue'; /* Replace with your color */
+    padding: 1em;
+    margin: 0;
+  }
+
+  .timeline--entry:before {
+    content: "";
+    color: 'white'; /* Replace with your color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3em;
+    height: 3em;
+    background-color: 'blue'; /* Replace with your color */
+    border: .2em solid white;
+    border-radius: 50%;
+    position: absolute;
+    counter-increment: section;
+    content: counter(section);/* Replace with your color */
+    left: -4.5em;
+  }
+
+}

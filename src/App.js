@@ -6,9 +6,9 @@ import Value from './components/Value';
 import Aim from './components/sub/Aim';
 import Banner1 from './components/Banner1';
 import Banner2 from './components/Banner2';
-import VisitorsOffer from './components/VisitorsOffer';
-import SellerOffer from './components/SellerOffer';
 import Footer from './components/Footer';
+import SellerOffer from './components/SellerOffer';
+import VisitorOffer from './components/VisitorOffer';
 
 function App() {
   return (
@@ -17,8 +17,8 @@ function App() {
       <Hero />
       <Explore />
       <Solutions />
-      {/* <VisitorsOffer />
-      <SellerOffer /> */}
+      <VisitorOffer/>
+      <SellerOffer/>
       <Aim />
       <Value />
       <Banner2 />
