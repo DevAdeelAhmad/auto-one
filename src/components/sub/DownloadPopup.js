@@ -35,7 +35,7 @@ const DownloadPopup = () => {
             <img
               src="/assets/pop1Image1.png"
               alt=""
-              className="flex lg:hidden !w-[80vw] !h-[45vh]"
+              className="flex lg:hidden !w-full !h-[45vh]"
             />
           </div>
           <div className="flex flex-col w-[60%] h-full justify-around">
