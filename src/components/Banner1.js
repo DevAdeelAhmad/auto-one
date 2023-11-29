@@ -11,7 +11,7 @@ const Banner1 = () => {
       <div className='flex flex-col w-[100%] lg:w-[45%] justify-center gap-y-5 lg:gap-y-10'>
         <Title title='We Are Available On Android And Apple' />
         <span>We would be happy if you download our apps and register with us. we are waiting for you.</span>
-        <DownloadPopup />
+        <DownloadPopup text="Download App Now" />
       </div>
 
     </div>
