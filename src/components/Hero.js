@@ -12,7 +12,7 @@ const Hero = () => {
                         <span className='flex flex-col text-center lg:text-start 2xl:text-lg text-tertiary'><span>Search, book, and unlock instantly, all from your </span><span> phone. Ditch the rental counter.</span></span>
                     </div>
                     <div className='flex flex-col gap-y-8 items-center lg:items-start'>
-                        <DownloadPopup />
+                        <DownloadPopup text="Donwload App Now" />
                         <DownloadBtn />
                     </div>
                 </div>

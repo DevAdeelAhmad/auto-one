@@ -5,7 +5,7 @@ import Title from "./Title";
 import FindUs from "./FindUs";
 import { MdClose } from "react-icons/md";
 
-const DownloadPopup = () => {
+const DownloadPopup = ({text}) => {
   const [render, setRender] = useState(false);
 
   function handlePopup() {
@@ -18,7 +18,7 @@ const DownloadPopup = () => {
         className={`flex rounded-3xl w-56 justify-evenly items-center px-6 py-3 bg-primary text-white font-semibold hover:shadow-md hover:shadow-primary`}
         onClick={handlePopup}
       >
-        <span>Download App Now</span>
+        <span>{text}</span>
         <MdOutlineFileDownload />
       </button>
 
