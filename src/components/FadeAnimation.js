@@ -1,8 +1,6 @@
 "use client"
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { ReactNode } from 'react';
-
 const fadeInVariant = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { duration: 2 } },
