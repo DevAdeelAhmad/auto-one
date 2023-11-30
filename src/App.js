@@ -15,18 +15,30 @@ function App() {
 
   const components = [NavBar, Hero, Explore, Solutions, VisitorOffer, SellerOffer, Aim, Value, Banner2, Banner1, Footer]
   return (
-
-    <>
-      {
-        components.map((Component, index) => (
-          <FadeAnimation>
-            <main className='flex flex-col items-center'>
-              <Component />
-            </main>
-          </FadeAnimation>
-        ))
-      }
-    </>
+    <main className='flex flex-col items-center'>
+      <NavBar />
+      <Hero />
+      <Explore />
+      <Solutions />
+      <VisitorOffer />
+      <SellerOffer />
+      <Aim />
+      <Value />
+      <Banner2 />
+      <Banner1 />
+      <Footer />
+    </main>
+    // <>
+    //   {
+    //     components.map((Component, index) => (
+    //       <FadeAnimation>
+    //         <main className='flex flex-col items-center'>
+    //           <Component />
+    //         </main>
+    //       </FadeAnimation>
+    //     ))
+    //   }
+    // </>
   );
 }
 
