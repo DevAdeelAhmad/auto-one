@@ -1,0 +1,25 @@
+.animated-text span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(1em);
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-text span:nth-child(1) {
+  animation-delay: 0.7s;
+}
+
+.animated-text span:nth-child(2) {
+  animation-delay: 1.2s;
+}
+
+.animated-text span:nth-child(3) {
+  animation-delay: 1.9s;
+}
